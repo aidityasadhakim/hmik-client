@@ -1,7 +1,7 @@
 import { Carousel } from "flowbite-react";
 import styles from "./carousel.module.css";
 
-const CarouselComponent = () => {
+const HomeCarousel = () => {
   return (
     <div className="h-[488px] md:h-[320px] sm:h-[320px] xl:h-[488px] 2xl:h-[488px] bg-blue-800 relative">
       <Carousel slideInterval={5000}>
@@ -40,4 +40,4 @@ const CarouselComponent = () => {
   );
 };
 
-export default CarouselComponent;
+export default HomeCarousel;

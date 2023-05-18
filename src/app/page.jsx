@@ -1,12 +1,12 @@
 "use client";
 
-import CarouselComponent from "@/components/carousel/CarouselComponent";
+import HomeCarousel from "@/components/carousel/HomeCarousel";
 import HomeContent from "@/components/home-content/HomeContent";
 
 export default function Home() {
   return (
     <div>
-      <CarouselComponent />
+      <HomeCarousel />
       <HomeContent />
     </div>
   );
