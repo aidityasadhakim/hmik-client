@@ -4,7 +4,6 @@ import { visiMisi } from "@/constant/VisiMisi";
 import { NamaAnggota } from "@/constant/NamaAnggota";
 import slideRight from "@/variants/slideRight";
 import slideLeft from "@/variants/slideLeft";
-import Wave from "../materials/wave";
 
 const HomeContent = () => {
   const h1Variant = {
