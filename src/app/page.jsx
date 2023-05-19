@@ -2,12 +2,16 @@
 
 import HomeCarousel from "@/components/carousel/HomeCarousel";
 import HomeContent from "@/components/home-content/HomeContent";
+import HomeSection2 from "@/components/home-content/HomeSection2";
+import Wave from "@/components/materials/wave";
 
 export default function Home() {
   return (
     <div>
       <HomeCarousel />
       <HomeContent />
+      <Wave />
+      <HomeSection2 />
     </div>
   );
 }

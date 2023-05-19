@@ -4,7 +4,7 @@ import slideRight from "@/variants/slideRight";
 const Visi = () => {
   return (
     <motion.div
-      variants={slideRight(1)}
+      variants={slideRight(1.5)}
       initial="offScreen"
       whileInView="onScreen"
       viewport={{ once: true }}

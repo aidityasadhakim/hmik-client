@@ -1,9 +1,10 @@
-import styles from "./Home.module.css";
-import Misi from "./Misi";
-import Visi from "./Visi";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
+import ImageDescription from "./ImageDescription";
+import { visiMisi } from "@/constant/VisiMisi";
+import { NamaAnggota } from "@/constant/NamaAnggota";
+import slideRight from "@/variants/slideRight";
+import slideLeft from "@/variants/slideLeft";
+import Wave from "../materials/wave";
 
 const HomeContent = () => {
   const h1Variant = {
@@ -13,7 +14,7 @@ const HomeContent = () => {
 
   return (
     <>
-      <div className="w-full bg-blue-800 flex flex-col h-[1000px]">
+      <div className="w-full bg-[#1e40af] flex flex-col h-full pb-[100px]">
         <div className={`text-white text-center p-5 pt-[120px]`}>
           <motion.h1
             variants={h1Variant}
@@ -27,10 +28,55 @@ const HomeContent = () => {
         </div>
 
         {/* Visi */}
-        <Visi />
+        <motion.div
+          variants={slideRight(1.5)}
+          initial="offScreen"
+          whileInView="onScreen"
+          viewport={{ once: true }}
+        >
+          <ImageDescription
+            name={NamaAnggota.ketuaHimpunan.name}
+            position={NamaAnggota.ketuaHimpunan.position}
+            image={NamaAnggota.ketuaHimpunan.image}
+            text={visiMisi.visi}
+            title="Visi"
+          />
+        </motion.div>
+        {/* <Visi /> */}
 
         {/* Misi */}
-        <Misi />
+        <motion.div
+          variants={slideLeft(1.5)}
+          initial="offScreen"
+          whileInView="onScreen"
+          viewport={{ once: true }}
+        >
+          <ImageDescription
+            name={NamaAnggota.wakilKetuaHimpunan.name}
+            position={NamaAnggota.wakilKetuaHimpunan.position}
+            image={NamaAnggota.wakilKetuaHimpunan.image}
+            text={visiMisi.misi}
+            title="Misi"
+            reverse={true}
+          />
+        </motion.div>
+        {/* <Misi /> */}
+
+        {/* BPH */}
+        <motion.div
+          variants={slideRight(1.5)}
+          initial="offScreen"
+          whileInView="onScreen"
+          viewport={{ once: true }}
+        >
+          <ImageDescription
+            name={NamaAnggota.badanPengurusHarian.name}
+            position={NamaAnggota.badanPengurusHarian.position}
+            image={NamaAnggota.badanPengurusHarian.image}
+            text={NamaAnggota.badanPengurusHarian.text}
+            title={NamaAnggota.badanPengurusHarian.position}
+          />
+        </motion.div>
       </div>
     </>
   );
