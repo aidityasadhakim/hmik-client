@@ -3,7 +3,7 @@ import styles from "./carousel.module.css";
 
 const HomeCarousel = () => {
   return (
-    <div className="h-[488px] md:h-[320px] sm:h-[320px] xl:h-[488px] 2xl:h-[488px] bg-blue-800 relative">
+    <div className="h-[488px] md:h-[550px] sm:h-[550px] xl:h-[550px] 2xl:h-[550px] bg-blue-800 relative">
       <Carousel slideInterval={5000}>
         <img
           className="object-cover h-full w-full"

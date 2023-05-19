@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MENU_LIST } from "../constant";
+import { MENU_LIST } from "../../constant/constant";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 

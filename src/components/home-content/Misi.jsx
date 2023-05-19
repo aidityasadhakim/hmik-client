@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Misi = () => {
   return (
     <motion.div
-      variants={slideLeft(1)}
+      variants={slideLeft(1.5)}
       initial="offScreen"
       whileInView="onScreen"
       viewport={{ once: true }}
