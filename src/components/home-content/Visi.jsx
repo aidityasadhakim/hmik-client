@@ -1,9 +1,18 @@
-const Visi = ({ description }) => {
+import { motion } from "framer-motion";
+import slideRight from "@/variants/slideRight";
+
+const Visi = () => {
   return (
-    <div className="flex flex-row gap-[20px] w-5/6 md:gap-[40px] md:w-1/2 mx-auto">
+    <motion.div
+      variants={slideRight(1.5)}
+      initial="offScreen"
+      whileInView="onScreen"
+      viewport={{ once: true }}
+      className="flex flex-row gap-[20px] w-5/6 md:gap-[40px] md:w-1/2 mx-auto text-center md:text-start"
+    >
       <div
         id="profilePicture"
-        className="flex flex-col text-white items-center h-full w-full"
+        className="flex flex-col text-white items-center h-[210px] w-[440px]"
       >
         <img src="/image8.png" alt="Kahim" className="h-full w-full" />
         <h5 className="font-bold text-[18px]">Julius Ganteng</h5>
@@ -22,7 +31,7 @@ const Visi = ({ description }) => {
           asperiores neque?
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
