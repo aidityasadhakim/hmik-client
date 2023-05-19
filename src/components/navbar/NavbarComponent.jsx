@@ -1,3 +1,4 @@
+"use client";
 import { MENU_LIST } from "../../constant/constant";
 import { usePathname } from "next/navigation";
 import { useState } from "react";

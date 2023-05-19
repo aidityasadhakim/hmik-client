@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import ImageDesc2 from "./ImageDesc2";
 import { Department } from "@/constant/Department";
 
