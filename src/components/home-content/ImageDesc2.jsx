@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ImageDesc2 = ({
   name = "tyasganteng123",
@@ -16,15 +17,17 @@ const ImageDesc2 = ({
   return (
     <div className="flex flex-col w-5/6 mx-auto text-center items-center">
       <div className={`text-[#1e40af] text-center p-5 pt-[20px] font-bold`}>
-        <motion.h1
-          variants={h1Variant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="font-bold tracking-tight text-[28px] underline underline-offset-[10px] decoration-[#F87F2C] decoration-2"
-        >
-          {title}
-        </motion.h1>
+        <Link href={`/members/${title.split(" ")[1].toLowerCase()}`}>
+          <motion.h1
+            variants={h1Variant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="font-bold tracking-tight text-[28px] underline underline-offset-[10px] decoration-[#F87F2C] decoration-2"
+          >
+            {title}
+          </motion.h1>
+        </Link>
       </div>
       {reverse ? (
         <div className="grid grid-cols-4 gap-[10px]">
@@ -34,7 +37,10 @@ const ImageDesc2 = ({
           </div>
 
           <div className="text-[14px] grow md:text-[18px] p-[10px] col-span-3 md:col-span-2 md:pt-[80px]">
-            {text}
+            <p>{text}</p>
+            <Link href={`/department/${title.toLowerCase().trim()}`}>
+              Know Us More!
+            </Link>
           </div>
 
           <div

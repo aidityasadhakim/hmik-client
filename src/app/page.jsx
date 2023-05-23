@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div>
       <HomeCarousel />
-      {/* <HomeContent /> */}
-      {/* <Wave /> */}
-      {/* <HomeSection2 /> */}
+      <HomeContent />
+      <Wave />
+      <HomeSection2 />
       <FooterComponent />
     </div>
   );
