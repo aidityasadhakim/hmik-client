@@ -1,4 +1,3 @@
-"use client";
 import { MENU_LIST } from "../../constant/constant";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -10,27 +9,12 @@ const NavbarComponent = () => {
   return (
     <>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link href="/" className="flex items-center">
-            <img
-              src="./logo-uper.png"
-              className="h-8 mr-3"
-              alt="Flowbite Logo"
-            />
-            <img
-              src="./logo-hmik.png"
-              className="h-8 mr-3"
-              alt="Flowbite Logo"
-            />
-            <img
-              src="./logo-hmik-text.png"
-              className="h-8 mr-3"
-              alt="Flowbite Logo"
-            />
-            {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              HMIK
-            </span> */}
-          </Link>
+        <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
+          <div href="/" className="flex items-center">
+            <img src="./logo-up.svg" className="h-8 mr-4" alt="logo up" />
+            <img src="./logo-hmik.svg" className="h-8 mr-4" alt="logo hmik" />
+            <img src="./text-hmik-up.svg" className="h-8 mr-4" alt="hmik up" />
+          </div>
           <button
             type="button"
             className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -72,7 +56,7 @@ const NavbarComponent = () => {
             }`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               {MENU_LIST.map((menu, index) => {
                 return (
                   <li key={index}>
