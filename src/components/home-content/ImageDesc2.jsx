@@ -17,7 +17,12 @@ const ImageDesc2 = ({
   return (
     <div className="flex flex-col w-5/6 mx-auto text-center items-center">
       <div className={`text-[#1e40af] text-center p-5 pt-[20px] font-bold`}>
-        <Link href={`/members/${title.split(" ")[1].toLowerCase()}`}>
+        <Link
+          href={`/members/${title
+            .replace("Departemen ", "")
+            .replace(" ", "-")
+            .toLowerCase()}`}
+        >
           <motion.h1
             variants={h1Variant}
             initial="hidden"
@@ -32,7 +37,7 @@ const ImageDesc2 = ({
       {reverse ? (
         <div className="grid grid-cols-4 gap-[10px]">
           <div className="flex flex-col hidden md:block text-[#1e40af] text-center items-center my-auto">
-            <img src={groupImage} alt="Group Image" />
+            <img src={`/img/${groupImage}`} alt="Group Image" />
             <h5 className="font-bold text-[18px] ">Anggota {title}</h5>
           </div>
 
@@ -47,7 +52,7 @@ const ImageDesc2 = ({
             id="profilePicture"
             className="flex flex-col text-[#1e40af] text-center items-center my-auto"
           >
-            <img src={image} alt="Profile Image" />
+            <img src={`/img/${image}`} alt="Profile Image" />
             <h5 className="font-bold text-[18px]">{name}</h5>
             <p className="opacity-50 font-light text-[14px]">{position}</p>
           </div>
@@ -58,7 +63,7 @@ const ImageDesc2 = ({
             id="profilePicture"
             className="flex flex-col text-[#1e40af] text-center items-center my-auto"
           >
-            <img src={image} alt="Profile Image" />
+            <img src={`/img/${image}`} alt="Profile Image" />
             <h5 className="font-bold text-[18px]">{name}</h5>
             <p className="opacity-50 font-light text-[14px]">{position}</p>
           </div>
@@ -68,7 +73,7 @@ const ImageDesc2 = ({
           </div>
 
           <div className="flex flex-col hidden md:block text-[#1e40af] text-center items-center my-auto">
-            <img src={groupImage} alt="Group Image" />
+            <img src={`/img/${groupImage}`} alt="Group Image" />
             <h5 className="font-bold text-[18px] ">Anggota {title}</h5>
           </div>
         </div>

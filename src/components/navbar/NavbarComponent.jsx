@@ -11,21 +11,9 @@ const NavbarComponent = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
           <div href="/" className="flex items-center">
-            <img
-              src="./logo-up.svg"
-              className="h-8 mr-4"
-              alt="logo up"
-            />
-            <img
-              src="./logo-hmik.svg"
-              className="h-8 mr-4"
-              alt="logo hmik"
-            />
-            <img
-              src="./text-hmik-up.svg"
-              className="h-8 mr-4"
-              alt="hmik up"
-            />
+            <img src="./logo-up.svg" className="h-8 mr-4" alt="logo up" />
+            <img src="./logo-hmik.svg" className="h-8 mr-4" alt="logo hmik" />
+            <img src="./text-hmik-up.svg" className="h-8 mr-4" alt="hmik up" />
           </div>
           <button
             type="button"

@@ -7,27 +7,27 @@ const HomeCarousel = () => {
       <Carousel slideInterval={5000}>
         <img
           className="object-cover h-full w-full"
-          src="/image5.png"
+          src={`/img/image5.png`}
           alt="HMIK"
         />
         <img
           className="object-cover h-full w-full"
-          src="/image5.png"
+          src={`/img/image5.png`}
           alt="HMIK"
         />
         <img
           className="object-cover h-full w-full"
-          src="/image5.png"
+          src={`/img/image5.png`}
           alt="HMIK"
         />
         <img
           className="object-cover h-full w-full"
-          src="/image5.png"
+          src={`/img/image5.png`}
           alt="HMIK"
         />
         <img
           className="object-cover h-full w-full"
-          src="/image5.png"
+          src={`/img/image5.png`}
           alt="HMIK"
         />
       </Carousel>

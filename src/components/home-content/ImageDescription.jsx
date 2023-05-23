@@ -16,7 +16,7 @@ const ImageDescription = ({
         id="profilePicture"
         className="flex flex-col flex-none text-white text-center items-center h-[100px] w-[100px] md:h-[150px] md:w-[150px]"
       >
-        <img src={image} alt="Kahim" className="h-full w-full" />
+        <img src={`/img/${image}`} alt="Kahim" className="h-full w-full" />
         <h5 className="font-bold text-[18px]">{name}</h5>
         <p className="opacity-50 font-light text-[14px]">{position}</p>
       </div>
