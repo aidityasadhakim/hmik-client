@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .card-container {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: red;
+  }
+}
+
+.card-container {
+  background-color: red;
+}
+
+.text {
+  color: red;
+}

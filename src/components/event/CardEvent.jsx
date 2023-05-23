@@ -1,18 +1,9 @@
 import { Card } from "flowbite-react";
+import "./event.module.css";
 
 const CardEvent = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-9 my-20 mx-32">
-      <style>
-        {`
-          @media (min-width: 768px) {
-            .card-container {
-              max-width: 768px;
-              margin: 0 auto;
-            }
-          }
-        `}
-      </style>
       <div className="max-w-sm card-container">
         <Card
           imgAlt="Meaningful alt text for an image that is not purely decorative"
@@ -22,7 +13,8 @@ const CardEvent = () => {
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.gi
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.gi
           </p>
         </Card>
       </div>
@@ -36,7 +28,8 @@ const CardEvent = () => {
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
           </p>
         </Card>
       </div>
@@ -50,7 +43,8 @@ const CardEvent = () => {
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
           </p>
         </Card>
       </div>
@@ -63,7 +57,8 @@ const CardEvent = () => {
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
           </p>
         </Card>
       </div>
@@ -76,7 +71,8 @@ const CardEvent = () => {
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
           </p>
         </Card>
       </div>
@@ -89,11 +85,11 @@ const CardEvent = () => {
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
           </p>
         </Card>
       </div>
-
     </div>
   );
 };
