@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import ImageDescription from "./ImageDescription";
 import { visiMisi } from "@/constant/VisiMisi";
 import { NamaAnggota } from "@/constant/NamaAnggota";
-import slideRight from "@/variants/slideRight";
-import slideLeft from "@/variants/slideLeft";
+import { slideLeft, slideRight } from "@/variants/variants";
 
 const HomeContent = () => {
   const h1Variant = {
@@ -28,7 +27,7 @@ const HomeContent = () => {
 
         {/* Visi */}
         <motion.div
-          variants={slideRight(1.5)}
+          variants={slideRight(2)}
           initial="offScreen"
           whileInView="onScreen"
           viewport={{ once: true }}
@@ -45,7 +44,7 @@ const HomeContent = () => {
 
         {/* Misi */}
         <motion.div
-          variants={slideLeft(1.5)}
+          variants={slideLeft(2)}
           initial="offScreen"
           whileInView="onScreen"
           viewport={{ once: true }}
@@ -63,7 +62,7 @@ const HomeContent = () => {
 
         {/* BPH */}
         <motion.div
-          variants={slideRight(1.5)}
+          variants={slideRight(2)}
           initial="offScreen"
           whileInView="onScreen"
           viewport={{ once: true }}

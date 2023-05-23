@@ -10,11 +10,11 @@ const NavbarComponent = () => {
     <>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
-          <div href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <img src="./logo-up.svg" className="h-8 mr-4" alt="logo up" />
             <img src="./logo-hmik.svg" className="h-8 mr-4" alt="logo hmik" />
             <img src="./text-hmik-up.svg" className="h-8 mr-4" alt="hmik up" />
-          </div>
+          </Link>
           <button
             type="button"
             className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
