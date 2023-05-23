@@ -1,5 +1,9 @@
-import { Card } from "flowbite-react";
+import { Card, Button } from "flowbite-react";
 import "./event.module.css";
+
+const printLn = () => {
+  console.log("1");
+};
 
 const CardEvent = () => {
   return (
@@ -16,6 +20,9 @@ const CardEvent = () => {
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.gi
           </p>
+          <Button onClick={printLn} gradientDuoTone={"purpleToBlue"}>
+            Read More
+          </Button>
         </Card>
       </div>
 
