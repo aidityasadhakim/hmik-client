@@ -51,3 +51,41 @@ export const slideUp = (duration) => {
     },
   };
 };
+
+export const bouncePopUpLeft = () => {
+  return {
+    offScreen: {
+      y: 300,
+      opacity: 0,
+    },
+    onScreen: {
+      y: 0,
+      rotate: -10,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 2,
+      },
+    },
+  };
+};
+
+export const bouncePopUpRight = () => {
+  return {
+    offScreen: {
+      y: 300,
+      opacity: 0,
+    },
+    onScreen: {
+      y: 0,
+      rotate: 10,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 2,
+      },
+    },
+  };
+};

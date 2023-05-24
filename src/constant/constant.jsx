@@ -4,14 +4,6 @@ export const MENU_LIST = [
     path: "/",
   },
   {
-    name: "About",
-    path: "/about",
-  },
-  {
-    name: "Kepengurusan",
-    path: "/kepengurusan",
-  },
-  {
     name: "Lomba",
     path: "/lomba",
   },
