@@ -1,4 +1,7 @@
 import React from "react";
+import WaveFooter from "../materials/WaveFooter";
+import { FaInstagram } from "react-icons/fa";
+import { logoUpPutih, logoHmikTextPutih } from "@/constant/ImageUrl";
 
 const FooterComponent = () => {
   return (
@@ -6,17 +9,19 @@ const FooterComponent = () => {
       className="text-white w-full"
       style={{ backgroundColor: "#004289" }}
     >
+      <WaveFooter />
+
       <div className="container mx-auto py-8 md:px-8">
         <div className="mx-2 md:flex md:justify-between md:px-12">
           <div className="flex items-center mb-6 md:mb-0">
             <div className="flex">
               <img
-                src={`/img/logo-up-putih.png`}
+                src={logoUpPutih}
                 className="h-12 md:h-20 md:mr-3"
                 alt="logo up pth"
               />
               <img
-                src={`/img/text-hmik-up-putih.png`}
+                src={logoHmikTextPutih}
                 className="h-12 ml-2 md:h-20 md:mr-3"
                 alt="txt hmik up pth"
               />
@@ -41,7 +46,8 @@ const FooterComponent = () => {
               </h2>
               <ul className="font-medium text-white font-poppins">
                 <li className="flex items-center">
-                  <img className="mr-2" src={`/img/Vector.png`} alt="" />
+                  <FaInstagram className="mr-2 text-[40px]" />
+                  {/* <img className="mr-2" src={`/img/Vector.png`} alt="" /> */}
                   <div>hmik.up</div>
                 </li>
               </ul>

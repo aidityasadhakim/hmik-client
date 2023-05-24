@@ -1,6 +1,7 @@
 import { Carousel } from "flowbite-react";
 import styles from "./carousel.module.css";
 import Image from "next/image";
+import { imageCover } from "@/constant/ImageUrl";
 
 const HomeCarousel = () => {
   return (
@@ -9,7 +10,7 @@ const HomeCarousel = () => {
         <div className="h-full w-full">
           <Image
             alt="HMIK"
-            src="/img/image5.png"
+            src={imageCover}
             fill={true}
             style={{ objectFit: "cover" }}
           />
@@ -17,7 +18,7 @@ const HomeCarousel = () => {
         <div className="h-full w-full">
           <Image
             alt="HMIK"
-            src="/img/image5.png"
+            src={imageCover}
             fill={true}
             style={{ objectFit: "cover" }}
           />
@@ -25,7 +26,7 @@ const HomeCarousel = () => {
         <div className="h-full w-full">
           <Image
             alt="HMIK"
-            src="/img/image5.png"
+            src={imageCover}
             fill={true}
             style={{ objectFit: "cover" }}
           />

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Button } from "flowbite-react";
 import Link from "next/link";
 
 const ImageDesc2 = ({
@@ -37,22 +38,35 @@ const ImageDesc2 = ({
       {reverse ? (
         <div className="grid grid-cols-4 gap-[10px]">
           <div className="flex flex-col hidden md:block text-[#1e40af] text-center items-center my-auto">
-            <img src={`/img/${groupImage}`} alt="Group Image" />
+            <img src={groupImage} alt="Group Image" />
             <h5 className="font-bold text-[18px] ">Anggota {title}</h5>
           </div>
 
           <div className="text-[14px] grow md:text-[18px] p-[10px] col-span-3 md:col-span-2 md:pt-[80px]">
             <p>{text}</p>
-            <Link href={`/department/${title.toLowerCase().trim()}`}>
-              Know Us More!
-            </Link>
+            <div className="w-1/2 mx-auto pt-[20px] grid place-items-center">
+              <Link
+                href={`/members/${title
+                  .replace("Departemen ", "")
+                  .replace(" ", "-")
+                  .toLowerCase()}`}
+              >
+                <Button
+                  size={"sm"}
+                  fullSized={false}
+                  gradientDuoTone={"purpleToBlue"}
+                >
+                  Know Us More!
+                </Button>
+              </Link>
+            </div>
           </div>
 
           <div
             id="profilePicture"
             className="flex flex-col text-[#1e40af] text-center items-center my-auto"
           >
-            <img src={`/img/${image}`} alt="Profile Image" />
+            <img src={image} alt="Profile Image" />
             <h5 className="font-bold text-[18px]">{name}</h5>
             <p className="opacity-50 font-light text-[14px]">{position}</p>
           </div>
@@ -63,17 +77,33 @@ const ImageDesc2 = ({
             id="profilePicture"
             className="flex flex-col text-[#1e40af] text-center items-center my-auto"
           >
-            <img src={`/img/${image}`} alt="Profile Image" />
+            <img src={image} alt="Profile Image" />
             <h5 className="font-bold text-[18px]">{name}</h5>
             <p className="opacity-50 font-light text-[14px]">{position}</p>
           </div>
 
           <div className="text-[14px] grow md:text-[18px] p-[10px] col-span-3 md:col-span-2 md:pt-[80px]">
-            {text}
+            <p>{text}</p>
+            <div className="w-1/2 mx-auto pt-[20px] grid place-items-center">
+              <Link
+                href={`/members/${title
+                  .replace("Departemen ", "")
+                  .replace(" ", "-")
+                  .toLowerCase()}`}
+              >
+                <Button
+                  size={"sm"}
+                  fullSized={false}
+                  gradientDuoTone={"purpleToBlue"}
+                >
+                  Know Us More!
+                </Button>
+              </Link>
+            </div>
           </div>
 
           <div className="flex flex-col hidden md:block text-[#1e40af] text-center items-center my-auto">
-            <img src={`/img/${groupImage}`} alt="Group Image" />
+            <img src={groupImage} alt="Group Image" />
             <h5 className="font-bold text-[18px] ">Anggota {title}</h5>
           </div>
         </div>
