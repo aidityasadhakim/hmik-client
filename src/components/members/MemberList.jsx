@@ -8,6 +8,7 @@ const MemberList = ({ members }) => {
       {members.map((member, key) => {
         return (
           <MemberContent
+            key={key}
             className={`${
               key == 0 ? "mt-[100px] mb-[-50px]  md:mb-[-100px]" : ""
             } ${key + 1 == members.length ? "" : " md:mb-[-100px]"}`}
