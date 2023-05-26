@@ -2,8 +2,8 @@
 import { useState } from "react";
 
 const Page = () => {
-  const preset_key = "pdqd2ef7";
-  const cloud_name = "dhutys1vb";
+  const preset_key = "";
+  const cloud_name = "";
   const [image, setImage] = useState();
   const [imageUrl, setImageUrl] = useState("");
 

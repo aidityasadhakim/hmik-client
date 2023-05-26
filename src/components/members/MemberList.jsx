@@ -2,7 +2,6 @@ import React from "react";
 import MemberContent from "./MemberContent";
 
 const MemberList = ({ members }) => {
-  console.log(members.length);
   return (
     <>
       {members.map((member, key) => {

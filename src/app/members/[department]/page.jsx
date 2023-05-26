@@ -22,6 +22,21 @@ const Page = () => {
       setMembers(data);
       console.log(data[0].departmentName);
     } catch (err) {
+      setMembers([
+        {
+          name: "Aidityas",
+          description: "You Only Live Once",
+          department: "1",
+          imgUrl:
+            "https://res.cloudinary.com/dhutys1vb/image/upload/q_auto:eco/v1684908123/pexels-pixabay-220453_lmj70j.jpg",
+          position: "Kepala Department",
+          linkedin: "https://linkedin.com",
+          instagram: "https://instagram.com/aidityas_adhakim",
+          updated_at: "2023-05-26T05:57:59.000000Z",
+          created_at: "2023-05-26T05:57:59.000000Z",
+          id: 13,
+        },
+      ]);
       throw Error(err);
     }
   };
