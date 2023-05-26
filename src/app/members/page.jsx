@@ -1,7 +1,13 @@
 import { redirect } from "next/navigation";
+import Head from "next/head";
+
+export const metadata = {
+  title: "Blocg",
+};
 
 const page = () => {
-  redirect("/");
+  // redirect("/");
+  return <div>Hello</div>;
 };
 
 export default page;

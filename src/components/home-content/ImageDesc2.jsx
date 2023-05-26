@@ -3,6 +3,7 @@ import { Button } from "flowbite-react";
 import Link from "next/link";
 
 const ImageDesc2 = ({
+  departmentId = 1,
   name = "tyasganteng123",
   position = "Moto Hidup",
   image = "/image8.png",
@@ -18,12 +19,7 @@ const ImageDesc2 = ({
   return (
     <div className="flex flex-col w-5/6 mx-auto text-center items-center">
       <div className={`text-[#1e40af] text-center p-5 pt-[20px] font-bold`}>
-        <Link
-          href={`/members/${title
-            .replace("Departemen ", "")
-            .replace(" ", "-")
-            .toLowerCase()}`}
-        >
+        <Link href={`/members/${departmentId}`}>
           <motion.h1
             variants={h1Variant}
             initial="hidden"
@@ -45,12 +41,7 @@ const ImageDesc2 = ({
           <div className="text-[14px] grow md:text-[18px] p-[10px] col-span-3 md:col-span-2 md:pt-[80px]">
             <p>{text}</p>
             <div className="w-1/2 mx-auto pt-[20px] grid place-items-center">
-              <Link
-                href={`/members/${title
-                  .replace("Departemen ", "")
-                  .replace(" ", "-")
-                  .toLowerCase()}`}
-              >
+              <Link href={`/members/${departmentId}`}>
                 <Button
                   size={"sm"}
                   fullSized={false}
@@ -85,12 +76,7 @@ const ImageDesc2 = ({
           <div className="text-[14px] grow md:text-[18px] p-[10px] col-span-3 md:col-span-2 md:pt-[80px]">
             <p>{text}</p>
             <div className="w-1/2 mx-auto pt-[20px] grid place-items-center">
-              <Link
-                href={`/members/${title
-                  .replace("Departemen ", "")
-                  .replace(" ", "-")
-                  .toLowerCase()}`}
-              >
+              <Link href={`/members/${departmentId}`}>
                 <Button
                   size={"sm"}
                   fullSized={false}

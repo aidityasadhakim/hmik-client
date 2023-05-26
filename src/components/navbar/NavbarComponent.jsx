@@ -1,3 +1,4 @@
+"use client";
 import { MENU_LIST } from "../../constant/constant";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -11,9 +12,21 @@ const NavbarComponent = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
           <Link href="/" className="flex items-center">
-            <img src="./logo-up.svg" className="h-8 mr-4" alt="logo up" />
-            <img src="./logo-hmik.svg" className="h-8 mr-4" alt="logo hmik" />
-            <img src="./text-hmik-up.svg" className="h-8 mr-4" alt="hmik up" />
+            <img
+              src="https://res.cloudinary.com/dhutys1vb/image/upload/v1684904666/hmik/logo-uper_g9lut8.png"
+              className="h-8 mr-4"
+              alt="logo up"
+            />
+            <img
+              src="https://res.cloudinary.com/dhutys1vb/image/upload/v1684904666/hmik/logo-hmik_uhgohn.png"
+              className="h-8 mr-4"
+              alt="logo hmik"
+            />
+            <img
+              src="https://res.cloudinary.com/dhutys1vb/image/upload/v1684904666/hmik/logo-hmik-text_hlswuk.png"
+              className="h-8 mr-4"
+              alt="hmik up"
+            />
           </Link>
           <button
             type="button"

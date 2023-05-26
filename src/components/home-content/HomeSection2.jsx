@@ -20,6 +20,7 @@ const HomeSection2 = () => {
           groupImage={Department.internal.groupImage}
           text={Department.internal.text}
           title={Department.internal.title}
+          departmentId={1}
         />
       </motion.div>
 
@@ -38,6 +39,7 @@ const HomeSection2 = () => {
           text={Department.eksternal.text}
           title={Department.eksternal.title}
           reverse={true}
+          departmentId={2}
         />
       </motion.div>
 
@@ -56,6 +58,7 @@ const HomeSection2 = () => {
           text={Department.pendidikanIt.text}
           title={Department.pendidikanIt.title}
           reverse={false}
+          departmentId={3}
         />
       </motion.div>
 
@@ -74,6 +77,7 @@ const HomeSection2 = () => {
           text={Department.pubdok.text}
           title={Department.pubdok.title}
           reverse={true}
+          departmentId={4}
         />
       </motion.div>
     </div>
