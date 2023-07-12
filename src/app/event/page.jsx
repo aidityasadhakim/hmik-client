@@ -1,14 +1,11 @@
-"use client";
-
-import CarouselEvent from "@/components/event/CarouselEvent";
-import CardList from "@/components/event/CardList";
-import { EVENT_LIST } from "@/constant/EventDummy";
+import CarouselEvent from "@/components/posts/CarouselEvent";
+import CardArticle from "@/components/posts/CardArticle";
 
 const page = () => {
   return (
     <div>
       <CarouselEvent />
-      <CardList events={EVENT_LIST} />
+      <CardArticle page={"event"} />
     </div>
   );
 };

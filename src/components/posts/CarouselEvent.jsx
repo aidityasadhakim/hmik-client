@@ -1,3 +1,4 @@
+"use client";
 import { Carousel } from "flowbite-react";
 
 const CarouselEvent = () => {

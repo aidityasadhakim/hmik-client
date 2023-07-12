@@ -5,11 +5,7 @@ export const MENU_LIST = [
   },
   {
     name: "Lomba",
-    path: "/lomba",
-  },
-  {
-    name: "Kompetisi",
-    path: "/kompetisi",
+    path: "/competition",
   },
   {
     name: "Event",

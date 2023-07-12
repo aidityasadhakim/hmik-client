@@ -1,7 +1,6 @@
 "use client";
 import clsx from "clsx";
 import { useParams } from "next/navigation";
-// import MemberContent from "@/components/members/MemberContent";
 import { slideLeft } from "@/variants/variants";
 import { motion } from "framer-motion";
 import Headers from "./head";
@@ -18,9 +17,8 @@ const Page = () => {
     try {
       const response = await api.get(`/api/members/department/${department}`);
       const data = await response.data.data;
-      setTitle(data[0].departmentName);
+      setTitle(data[0]?.departmentName);
       setMembers(data);
-      console.log(data[0].departmentName);
     } catch (err) {
       setMembers([
         {
