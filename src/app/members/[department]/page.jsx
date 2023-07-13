@@ -15,7 +15,7 @@ const Page = () => {
 
   const fetchMembers = async () => {
     try {
-      const response = await api.get(`/api/members/department/${department}`);
+      const response = await api.get(`/members/department/${department}`);
       const data = await response.data.data;
       setTitle(data[0]?.departmentName);
       setMembers(data);
